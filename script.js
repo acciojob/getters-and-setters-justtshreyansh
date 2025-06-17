@@ -2,14 +2,14 @@
 class Person {
 	constructor(name,age){
 		this._name = name;
-		this.age =age;
+		this._age =age;
 	}
 
 	get get_name(){
 		return this._name;
 	}
 	set set_age(age){
-		this.age = age;
+		this._age = age;
 	}
 }
 
@@ -38,7 +38,7 @@ const person = new Person("John", 25);
 console.log(person.get_name);  // Output: John
 
 person.set_age = 30;  // Using the setter to change the age
-console.log(person.age);  // Output: 30
+console.log(person._age);  // Output: 30
 
 // Creating a Student instance
 const student = new Student("Alice", 22);
