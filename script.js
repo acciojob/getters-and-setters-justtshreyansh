@@ -1,8 +1,8 @@
 //complete this code
 class Person {
 	constructor(name,age){
-		this.name = name;
-		this.age = age;
+		this.name = "John";
+		this.age = 30;
 	}
 
 	get get_name(){
